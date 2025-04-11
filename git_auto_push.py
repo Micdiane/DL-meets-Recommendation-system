@@ -13,16 +13,6 @@ def run_command(command):
 def main():
     # 获取当前目录
     current_dir = os.getcwd()
-    
-    # 初始化Git仓库
-    print("正在初始化Git仓库...")
-    run_command("git init")
-    
-    # 添加远程仓库
-    print("正在添加远程仓库...")
-    remote_url = "git@github.com:Micdiane/DL-meets-Recommendation-system.git"
-    run_command(f"git remote add origin {remote_url}")
-    
     # 添加所有文件
     print("正在添加文件...")
     run_command("git add .")
